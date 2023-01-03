@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="head">
+     <header>
+         <a href="" class="logo"><img src="./img/pepsi logo.png"></a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order</a></li>
+          </ul>    
+     </header>
+
+     <div class="content">
+       <div class="textbox">
+         <h2>That what <br> <span>i Like</span></h2>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia exercitationem, veniam voluptas voluptates quasi ipsum eos illo corrupti sed! Quos aut autem architecto reprehenderit omnis, ut perspiciatis esse est eveniet veritatis eaque recusandae dolorem porro voluptates nostrum ab debitis ipsum.
+           </p>
+            <a href="#">View All Product</a>
+       </div>
+         <div class="imgbox">
+              <img src="./img/pepsi001.png" class="pepsi">
+         </div>
+     </div>
+
+     <ul class="thum">
+      <li><img src="./img/pepsi001.png" onclick="picchange('./img/pepsi001.png'); bgcolorchange('#0062be')"></li>
+       <li><img src="./img/pepsi002.png" onclick="picchange('./img/pepsi002.png') ; bgcolorchange('#e60c2c')"></li>
+       <li><img src="./img/pepsi003.png" onclick="picchange('./img/pepsi003.png'); bgcolorchange('#000')"></li>
+     </ul>
+
+     <ul class="icon">
+        <li><img src="./img/facebook.png"></li>
+        <li><img src="./img/instagram.png"></li>
+     </ul>
+  </section>
+
+  <script type="text/javascript">
+      function  picchange(anything){
+        document.querySelector('.pepsi').src = anything;
+      }
+
+      function bgcolorchange(color){
+        const  head = document.querySelector('.head');
+        head.style.background = color;
+
+      }
+    </script>
+</body>
+</html>
